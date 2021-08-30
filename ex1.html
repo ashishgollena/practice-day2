@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <title>ex1</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<script>
+    function show() {
+        var firstnameObj = document.getElementById("firstName");
+        if (firstnameObj.value == "") {} else {
+            alert("please enter any value");
+        }
+    }
+
+    function validate() {
+        var firstnameObj = document.getElementById("firstName");
+        if (firstnameObj.value == "") {
+            alert("please enter any value");
+        }
+    }
+</script>
+
+<body>
+    Enter firstName:<input type="text" id="firstName" value="" placeholder="enter first name" onblur="validate()">
+    <input type="button" id="btn1" value="click me" onclick="show()">
+</body>
+
+</html>
